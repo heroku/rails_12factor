@@ -4,8 +4,8 @@ require File.expand_path('../lib/rails_12factor/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Richard Schneeman", "Terence Lee"]
   gem.email         = ["richard@heroku.com", "terence@heroku.com"]
-  gem.description   = %q{Make Running Rails easier}
-  gem.summary       = %q{Configures your app to log to stdout and to serve assets in production.}
+  gem.description   = %q{Run Rails the 12factor way}
+  gem.summary       = %q{ Following best practices from http://12factor.net run a maintainable, clean, and scalable app on Rails}
   gem.homepage      = "https://github.com/heroku/rails_12factor"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
