@@ -1,6 +1,6 @@
 # Rails 12factor
 
-Makes running your Rails app easier. Based on the ideas behind [12factor.net](http://twelve-factor.net)
+Makes running your Rails app easier. Based on the ideas behind [12factor.net](http://12factor.net)
 
 ## What
 
