@@ -1,10 +1,10 @@
 # Rails 12factor
 
-Makes running your Rails app easier. Based on the ideas behind [12factor.net](http://twelve-factor.net)
+Makes running your Rails app easier. Based on the ideas behind [12factor.net](http://12factor.net)
 
 ## What
 
-Rails gets a lot right when it comes to twelve-factor apps, but it could still be better. The two biggest areas right now is that in production [logs should be directed to stdout](http://www.twelve-factor.net/logs) and [dev/prod parity](http://www.twelve-factor.net/dev-prod-parity) while delivering assets.
+Rails gets a lot right when it comes to twelve-factor apps, but it could still be better. The two biggest areas right now is that in production [logs should be directed to stdout](http://www.12factor.net/logs) and [dev/prod parity](http://www.12factor.net/dev-prod-parity) while delivering assets.
 
 This gem enables serving assets in production and setting your logger to standard out, both of which are required for to run a Rails 4 application on a twelve-factor provider.
 
@@ -32,7 +32,7 @@ This gem adds two other gems `rails_serve_static_assets` and `rails_stdout_loggi
 
 By default Rails writes its logs to a specific file, which is convenient if you only have one log file to tail. When you start scaling to multiple instances running your app, finding a single request or failure across multiple files becomes much harder. Storing logs on disk can also take down a server if the hard drive fills up. Because of these limitations, every Rails core member we’ve  talked to uses a custom logger to replace Rail's default functionality. By using the `rails_stdout_logging` gem, the logger is set for you.
 
-The gem `rails_stdout_logging` ensures that your logs will be sent to standard out, and from there the twelve-factor platform can send them to a log aggregation service ( like  [logplex](https://github.com/heroku/logplex) on Heroku, or [Papertrail](https://papertrailapp.com)) so you can access them from one place. By using stdout instead of files, you can [treat logs as event streams](http://www.twelve-factor.net/logs).
+The gem `rails_stdout_logging` ensures that your logs will be sent to standard out, and from there the twelve-factor platform can send them to a log aggregation service ( like  [logplex](https://github.com/heroku/logplex) on Heroku, or [Papertrail](https://papertrailapp.com)) so you can access them from one place. By using stdout instead of files, you can [treat logs as event streams](http://www.12factor.net/logs).
 
 
 ## Rails 4 Serve Static Assets
