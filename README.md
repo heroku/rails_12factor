@@ -26,7 +26,7 @@ Now you're good to go.
 
 ## How
 
-This gem adds two other gems `rails_serve_static_assets` and `rails_stdout_logging`. These gems are required to run your Rails app with both logging aggregation and static assets serving in production. All you need to do to get the functionality of both gems is to add the `rails_twelve-factor` gem to your project. Here is how they work:
+This gem adds two other gems `rails_serve_static_assets` and `rails_stdout_logging`. These gems are required to run your Rails app with both logging aggregation and static assets serving in production. All you need to do to get the functionality of both gems is to add the `rails_12factor` gem to your project. Here is how they work:
 
 ## Rails 4 Logging
 
