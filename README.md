@@ -6,7 +6,7 @@ Makes running your Rails app easier. Based on the ideas behind [12factor.net](ht
 
 Rails gets a lot right when it comes to twelve-factor apps, but it could still be better. The two biggest areas right now is that in production [logs should be directed to stdout](http://www.12factor.net/logs) and [dev/prod parity](http://www.12factor.net/dev-prod-parity) while delivering assets.
 
-This gem enables serving assets in production and setting your logger to standard out, both of which are required for to run a Rails 4 application on a twelve-factor provider.
+This gem enables serving assets in production and setting your logger to standard out, both of which are required for to run a Rails 4 application on a twelve-factor provider. The gem also makes the appropriate changes for Rails 3 apps.
 
 ## Install
 
