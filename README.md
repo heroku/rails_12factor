@@ -1,4 +1,4 @@
-# Rails 12factor
+# Rails 12factor [![Build Status](https://travis-ci.org/heroku/rails_12factor.png)](https://travis-ci.org/heroku/rails_12factor)
 
 Makes running your Rails app easier. Based on the ideas behind [12factor.net](http://12factor.net)
 
