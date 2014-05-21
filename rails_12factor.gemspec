@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "rails_12factor"
   gem.require_paths = ["lib"]
   gem.version       = Rails12factor::VERSION
-  gem.licenses      = ['Modified New BSD', 'New BSD', 'MIT']
+  gem.licenses      = ['MIT']
 
   gem.add_development_dependency "minitest"
   gem.add_development_dependency "rake"
