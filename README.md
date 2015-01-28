@@ -30,7 +30,7 @@ This gem adds two other gems `rails_serve_static_assets` and `rails_stdout_loggi
 
 ## Rails 4 Logging
 
-By default Rails writes its logs to a specific file, which is convenient if you only have one log file to tail. When you start scaling to multiple instances running your app, finding a single request or failure across multiple files becomes much harder. Storing logs on disk can also take down a server if the hard drive fills up. Because of these limitations, every Rails core member we’ve  talked to uses a custom logger to replace Rail's default functionality. By using the `rails_stdout_logging` gem, the logger is set for you.
+By default Rails writes its logs to a specific file, which is convenient if you only have one log file to tail. When you start scaling to multiple instances running your app, finding a single request or failure across multiple files becomes much harder. Storing logs on disk can also take down a server if the hard drive fills up. Because of these limitations, every Rails core member we’ve  talked to uses a custom logger to replace Rails' default functionality. By using the `rails_stdout_logging` gem, the logger is set for you.
 
 The gem `rails_stdout_logging` ensures that your logs will be sent to standard out, and from there the twelve-factor platform can send them to a log aggregation service ( like  [logplex](https://github.com/heroku/logplex) on Heroku, or [Papertrail](https://papertrailapp.com)) so you can access them from one place. By using stdout instead of files, you can [treat logs as event streams](http://www.12factor.net/logs).
 
