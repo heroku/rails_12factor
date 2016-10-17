@@ -49,8 +49,15 @@ The `rails_serve_static_assets` gem enables your Rails server to deliver your as
 
 ## Rails 5 and Beyond
 
-We worked with the Rails core team to make Rails 5 work on twelve-factor platforms out of the box. If you are starting a new application with Rails 5, you do not need this gem. When migrating a Rails app to Rails 5, you can remove this gem after making sure the following sections are added in your production.rb file:
+We worked with the Rails core team to make Rails 5 work on twelve-factor platforms out of the box.
 
+### If you are starting a new application with Rails 5, you do not need this gem.
+
+### When migrating a Rails app to Rails 5
+You can remove this gem after making sure the following sections are added in
+your `production.rb` file:
+
+**`config/environments/production.rb`**
 ```ruby
 # Disable serving static files from the `/public` folder by default since
 # Apache or NGINX already handles this.
@@ -62,3 +69,4 @@ if ENV["RAILS_LOG_TO_STDOUT"].present?
   config.logger = ActiveSupport::TaggedLogging.new(logger)
 end
 ```
+
