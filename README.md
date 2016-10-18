@@ -46,14 +46,16 @@ By default Rails 4 will return a 404 if an asset is not handled via an external 
 The `rails_serve_static_assets` gem enables your Rails server to deliver your assets directly, instead of returning a 404. You can use this to populate an edge cache CDN, or serve files directly from your web app. This gives your app total control, allowing you to do things like redirects or setting headers in your Ruby code. The gem achieves this behavior in your app by simply setting a single configuration option, `config.serve_static_assets = true`. By using the `rails_serve_static_assets` gem, you do not need to set this configuration manually.
 
 
-
-## Rails 5 and Beyond
+## Rails 5
 
 We worked with the Rails core team to make Rails 5 work on twelve-factor platforms out of the box.
 
-### If you are starting a new application with Rails 5, you do not need this gem.
+### New Rails 5 Apps
 
-### When migrating a Rails app to Rails 5
+If you are starting a new application with Rails 5, **you do not need this gem.**
+
+### Migrating to Rails 5
+
 You can remove this gem after making sure the following sections are added in
 your `production.rb` file:
 
@@ -70,3 +72,4 @@ if ENV["RAILS_LOG_TO_STDOUT"].present?
 end
 ```
 
+Make sure to add both the `RAILS_SERVE_STATIC_FILES` and `RAILS_LOG_TO_STDOUT` ENV vars and set them to `true`. (This is done for you on Heroku)
