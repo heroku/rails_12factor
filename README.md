@@ -66,6 +66,7 @@ your `production.rb` file:
 config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
 if ENV["RAILS_LOG_TO_STDOUT"].present?
+  STDOUT.sync = true
   logger           = ActiveSupport::Logger.new(STDOUT)
   logger.formatter = config.log_formatter
   config.logger = ActiveSupport::TaggedLogging.new(logger)
