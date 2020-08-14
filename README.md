@@ -1,6 +1,8 @@
 # Rails 12factor [![Build Status](https://travis-ci.org/heroku/rails_12factor.png)](https://travis-ci.org/heroku/rails_12factor)
 
-Makes running your Rails app easier. Based on the ideas behind [12factor.net](http://12factor.net)
+Makes running your Rails 4 (or 3) app easier. Based on the ideas behind [12factor.net](http://12factor.net)
+
+If you are starting a new application with Rails 5, you do not need this gem. You can [remove the need for this gem](#migrating-to-rails-5) if you upgrade from Rails 4 to 5.
 
 ## What
 
